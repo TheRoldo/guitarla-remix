@@ -18,20 +18,6 @@ export async function loader({ params }) {
     return guitarra
 }
 
-/*** Manejo De Errores ***/
-export function ErrorBoundary(){
-    const error = useRouteError()
-   
-    if(isRouteErrorResponse(error)){
-      return(
-        <p className='error'>{error.status} {error.statusText}</p>
-      )
-    }
-    return(
-        <p className='error'>Error Desconocido</p>
-    )
-  }
-
 export function meta({data}) {
     
     if(!data) {
