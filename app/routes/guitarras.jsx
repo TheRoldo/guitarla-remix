@@ -1,5 +1,5 @@
 import { Outlet } from '@remix-run/react'
-import styles from '~/styles/blog.css' 
+import styles from '~/styles/guitarras.css'
 
 export function links() {
   return [
@@ -10,13 +10,13 @@ export function links() {
   ]
 }
 
-function Blog() {
+function Tienda() {
 
   return (
-    <main className="contenedor">
-      <Outlet />
+    <main className='contenedor'>
+     <Outlet />
     </main>
   )
 }
 
-export default Blog
+export default Tienda
